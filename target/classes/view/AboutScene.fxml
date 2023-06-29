@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="345.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.editor.controller.AboutSceneController">
+   <children>
+      <HBox alignment="CENTER" layoutX="60.0" layoutY="29.0" prefHeight="37.0" prefWidth="297.0" spacing="10.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#btnAboutOnAction" prefHeight="29.0" prefWidth="76.0" text="About">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCredit" mnemonicParsing="false" onAction="#btnCreditOnAction" prefHeight="29.0" prefWidth="76.0" text="Credit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="90.0" layoutY="81.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <ImageView fx:id="imgView" fitHeight="111.0" fitWidth="237.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/main.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox layoutX="27.0" layoutY="210.0" prefHeight="83.0" prefWidth="370.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="210.0">
+         <children>
+            <Label fx:id="lblMain" alignment="TOP_CENTER" contentDisplay="BOTTOM" lineSpacing="5.0" maxWidth="1.7976931348623157E308" prefHeight="67.0" prefWidth="297.0" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLast" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="16.0" prefWidth="297.0" textAlignment="CENTER" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
