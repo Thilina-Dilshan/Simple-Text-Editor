@@ -58,7 +58,15 @@ public class EditorSceneController {
 
      
     public void mnAboutOnAction(ActionEvent event) throws IOException {
-
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/view/AboutScene.fxml"));
+        AnchorPane rootAbout = fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(rootAbout));
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initOwner(txtEditor.getScene().getWindow());
+        stage.setResizable(false);
+        stage.show();
+        stage.centerOnScreen();
     }
 
      
